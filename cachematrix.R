@@ -25,6 +25,9 @@ makeCacheMatrix <- function(x = matrix()) {
 
 ## Write a short comment describing this function
 # This function assumes that the matrix is always invertible.
+# The following function calculates the inverse matrix of the special "matrix" 
+# created with the above function. It calculates the inverse of the data 
+# and sets the value of the inverse matrix in the cache via the setInverse function.                
 
 cacheSolve <- function(x, ...) {
     inv <- x$getinverse()
